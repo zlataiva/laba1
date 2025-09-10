@@ -21,7 +21,7 @@ namespace laba1
         {
             return p1;
         }
-        //popa
+        
         public Point2D getP2()
         {
             return p2;

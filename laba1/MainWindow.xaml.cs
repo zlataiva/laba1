@@ -18,15 +18,18 @@ namespace laba1
     {
         private Random rnd = new Random();
         private Triangle tr;
+
         public MainWindow()
         {
             InitializeComponent();
             Point2D p1 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0, (int)Scene.Height));
             Point2D p2 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0, (int)Scene.Height));
             Point2D p3 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0, (int)Scene.Height));
+            Point2D p4 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0, (int)Scene.Height));
             tr = new Triangle(p1, p2, p3);
         
         }
+
         public void DrawLine(Point2D p1, Point2D p2)
         {
             Line line = new Line();
@@ -47,6 +50,10 @@ namespace laba1
             DrawLine(tr.getP3(), tr.getP1());
         }
 
+        public void ClearScene()
+        {
+            Scene.Children.Clear();
+        }
 
     }
 }

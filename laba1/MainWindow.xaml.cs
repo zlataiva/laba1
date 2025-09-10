@@ -18,7 +18,7 @@ namespace laba1
     {
         private Random rnd = new Random();
         private Triangle tr;
-        private Rectangle rc;//
+        private Rectangle rc;
         public MainWindow()
         {
             InitializeComponent();

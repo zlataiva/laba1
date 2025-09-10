@@ -7,8 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Canvas x:Name="Scene" HorizontalAlignment="Left" Height="400" Margin="15,0,0,0" VerticalAlignment="Center" Width="680"/>
-
-
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <UniformGrid Grid.Row="0" Columns="3">
+            <Button></Button>
+            <Button></Button>
+            <Button></Button>
+        </UniformGrid>
+        <UniformGrid Grid.Row="1" Rows="2" Columns="2">
+            <TextBlock></TextBlock>
+            <Slider></Slider>
+            <TextBlock></TextBlock>
+            <Slider></Slider>
+        </UniformGrid>
+        <Canvas Grid.Row="2" x:Name="Scene" Height="400" Margin="15,0,0,0" VerticalAlignment="Center" Width="680"/>
     </Grid>
 </Window>

@@ -11,11 +11,13 @@ namespace laba1
         private Point2D p1;
         private Point2D p2;
         private Point2D p3;
-        public Rectangle(Point2D p1, Point2D p2, Point2D p3)
+        private Point2D p4;
+        public Rectangle(Point2D p1, Point2D p2, Point2D p3, Point2D p4)
         {
             this.p1 = p1;
             this.p2 = p2;
             this.p3 = p3;
+            this.p4 = p4;
         }
         public Point2D getP1()
         {
@@ -30,18 +32,25 @@ namespace laba1
         {
             return p3;
         }
-        public void addX(int x)
+        public Point2D getP4()
         {
-            p1.addX(x);
-            p2.addX(x);
-            p3.addX(x);
+            return p4;
         }
 
-        public void addY(int y)
+        public void addX(int X)
         {
-            p1.addY(y);
-            p2.addY(y);
-            p3.addY(y);
+            p1.addX(X);
+            p2.addX(X);
+            p3.addX(X);
+            p4.addX(X);
+        }
+
+        public void addY(int Y)
+        {
+            p1.addY(Y);
+            p2.addY(Y);
+            p3.addY(Y);
+            p4.addY(Y);
         }
     }
 }

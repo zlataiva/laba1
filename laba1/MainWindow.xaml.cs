@@ -22,10 +22,8 @@ namespace laba1
         {
             InitializeComponent();
             Point2D p1 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0, (int)Scene.Height));
-            Point2D p2 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0,
-           (int)Scene.Height));
-            Point2D p3 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0,
-           (int)Scene.Height));
+            Point2D p2 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0, (int)Scene.Height));
+            Point2D p3 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0, (int)Scene.Height));
             tr = new Triangle(p1, p2, p3);
         
         }
@@ -35,10 +33,10 @@ namespace laba1
             line.Stroke = Brushes.Red;
             line.StrokeThickness = 3;
 
+            line.X1 = p1.getX();
             line.Y1 = p1.getY();
             line.X2 = p2.getX();
             line.Y2 = p2.getY();
-
 
             Scene.Children.Add(line);
         }
@@ -48,9 +46,6 @@ namespace laba1
             DrawLine(tr.getP2(), tr.getP3());
             DrawLine(tr.getP3(), tr.getP1());
         }
-
-
-
 
 
     }

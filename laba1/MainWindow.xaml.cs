@@ -61,10 +61,10 @@ namespace laba1
 
         public void DrawRectangle(Rectangle rc)
         {
-            DrawLine(rc.getP1(), tr.getP2());
-            DrawLine(rc.getP2(), tr.getP3());
-            DrawLine(rc.getP3(), tr.getP4());
-            DrawLine(rc.getP4(), tr.getP1());
+            DrawLine(rc.getP1(), rc.getP2());
+            DrawLine(rc.getP2(), rc.getP3());
+            DrawLine(rc.getP3(), rc.getP4());
+            DrawLine(rc.getP4(), rc.getP1());
         }
 
     }

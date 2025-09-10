@@ -19,6 +19,7 @@ namespace laba1
         private Random rnd = new Random();
         private Triangle tr;
         private Rectangle rc;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -32,16 +33,17 @@ namespace laba1
             tr = new Triangle(p1, p2, p3);
             rc = new Rectangle(p1, p2, p3, p4);
         }
+
         public void DrawLine(Point2D p1, Point2D p2)
         {
             Line line = new Line();
             line.Stroke = Brushes.Red;
             line.StrokeThickness = 3;
 
+            line.X1 = p1.getX();
             line.Y1 = p1.getY();
             line.X2 = p2.getX();
             line.Y2 = p2.getY();
-
 
             Scene.Children.Add(line);
         }
@@ -51,6 +53,12 @@ namespace laba1
             DrawLine(tr.getP2(), tr.getP3());
             DrawLine(tr.getP3(), tr.getP1());
         }
+
+        public void ClearScene()
+        {
+            Scene.Children.Clear();
+        }
+
         public void DrawRectangle(Rectangle rc)
         {
             DrawLine(rc.getP1(), tr.getP2());
@@ -58,9 +66,6 @@ namespace laba1
             DrawLine(rc.getP3(), tr.getP4());
             DrawLine(rc.getP4(), tr.getP1());
         }
-
-
-
 
     }
         

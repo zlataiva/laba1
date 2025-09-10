@@ -18,6 +18,7 @@ namespace laba1
     {
         private Random rnd = new Random();
         private Triangle tr;
+        private Rectangle rc;//
         public MainWindow()
         {
             InitializeComponent();
@@ -26,8 +27,10 @@ namespace laba1
            (int)Scene.Height));
             Point2D p3 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0,
            (int)Scene.Height));
+            Point2D p4 = new Point2D(rnd.Next(0, (int)Scene.Width), rnd.Next(0,
+           (int)Scene.Height));
             tr = new Triangle(p1, p2, p3);
-        
+            rc = new Rectangle(p1, p2, p3, p4);
         }
         public void DrawLine(Point2D p1, Point2D p2)
         {
@@ -48,10 +51,17 @@ namespace laba1
             DrawLine(tr.getP2(), tr.getP3());
             DrawLine(tr.getP3(), tr.getP1());
         }
-
+        public void DrawRectangle(Rectangle rc)
+        {
+            DrawLine(rc.getP1(), tr.getP2());
+            DrawLine(rc.getP2(), tr.getP3());
+            DrawLine(rc.getP3(), tr.getP4());
+            DrawLine(rc.getP4(), tr.getP1());
+        }
 
 
 
 
     }
+        
 }

@@ -33,7 +33,7 @@ namespace laba1
         {
             p1.addX(x);
             p2.addX(x);
-            p3.addX(x);
+            p3.addX(x);//
         }
 
         public void addY(int y)

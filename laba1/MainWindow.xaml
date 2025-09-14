@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
         
-    <Grid>
+    <Grid Margin="20">
         <Grid.RowDefinitions>
             <!--ну я не знаю, я рак наверное не понимаю че не так. Дипсик ультрадаун тоже и не может ниче мне дать я уже все сделал че он от меня хотел-->
             <RowDefinition></RowDefinition>
@@ -15,14 +15,14 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <UniformGrid Grid.Row="0" Columns="3">
-            <Button Content="💩"></Button> <!--Style="{StaticResource BaseButtonStyle}"-->
-            <Button></Button>
-            <Button></Button>
+            <Button Click="DrawTriangle" Content="Произвольный треугольник" Style="{StaticResource BaseButtonStyle}"></Button>
+            <Button Content="Произвольный прямоугольник" Style="{StaticResource BaseButtonStyle}"></Button>
+            <Button Content="Произвольный Кватрат" Style="{StaticResource BaseButtonStyle}"></Button>
         </UniformGrid>
         <UniformGrid Grid.Row="1" Rows="2" Columns="2">
-            <TextBlock></TextBlock>
+            <TextBlock Text="Сдвиг по X:" Style="{StaticResource NameSpaceTextBlockStyle}"></TextBlock>
             <Slider></Slider>
-            <TextBlock></TextBlock>
+            <TextBlock Text="Сдвиг по Y:" Style="{StaticResource NameSpaceTextBlockStyle}"></TextBlock>
             <Slider></Slider>
         </UniformGrid>
         <Canvas Grid.Row="2" x:Name="Scene" Height="400" Margin="15,0,0,0" VerticalAlignment="Center" Width="680"/>

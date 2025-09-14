@@ -37,7 +37,7 @@ namespace laba1
         public void DrawLine(Point2D p1, Point2D p2)
         {
             Line line = new Line();
-            line.Stroke = Brushes.Red;
+            line.Stroke = Brushes.LightPink;
             line.StrokeThickness = 3;
 
             line.X1 = p1.getX();

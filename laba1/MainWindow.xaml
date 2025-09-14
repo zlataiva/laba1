@@ -6,24 +6,16 @@
         xmlns:local="clr-namespace:laba1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-
-    <Window.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/laba1;component/Dictionary1.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Window.Resources>
-
-
+        
     <Grid>
         <Grid.RowDefinitions>
+            <!--ну я не знаю, я рак наверное не понимаю че не так. Дипсик ультрадаун тоже и не может ниче мне дать я уже все сделал че он от меня хотел-->
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <UniformGrid Grid.Row="0" Columns="3">
-            <Button Content="💩" Style="{StaticResource BaseButtonStyle}"></Button>
+            <Button Content="💩"></Button> <!--Style="{StaticResource BaseButtonStyle}"-->
             <Button></Button>
             <Button></Button>
         </UniformGrid>

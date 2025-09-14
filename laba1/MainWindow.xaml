@@ -9,7 +9,6 @@
         
     <Grid Margin="20">
         <Grid.RowDefinitions>
-            <!--ну я не знаю, я рак наверное не понимаю че не так. Дипсик ультрадаун тоже и не может ниче мне дать я уже все сделал че он от меня хотел-->
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>

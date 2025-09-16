@@ -8,8 +8,40 @@ namespace laba1
 {
     public class Point2D
     {
-        private int X;
-        private int Y;
+
+        int x;
+        int y; //хз??
+
+        private int X
+        { 
+            get; 
+            set; 
+        }
+
+        private int Y
+        { 
+            get; 
+            set; 
+        }
+
+        //get
+        //    {
+        //        return x;
+        //    }
+        //set
+        //    {
+        //        x = value;
+        //        OnPropertyChanged(nameof(X)); ???????? 
+        //}
+
+        //public event PropertyChangedEventHandler PropertyChanged;
+
+        //public void OnPropertyChanged([CallerMemberName] string prop = "")
+        //{
+        //    if (PropertyChanged != null)
+        //        PropertyChanged(this, new PropertyChangedEventArgs(prop));
+        //} ну вобщем это тоже хз не уверен
+
         public Point2D(int x, int y)
         {
             this.X = x;

@@ -67,6 +67,10 @@ namespace laba1
             DrawLine(rc.getP4(), rc.getP1());
         }
 
+        private void Button_Tr(object sender, RoutedEventArgs e)
+        {
+           // DrawTriangle(new Triangle());
+        }
     }
         
 }
